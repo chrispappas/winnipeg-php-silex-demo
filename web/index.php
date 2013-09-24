@@ -1,7 +1,8 @@
 <?php
 // web/index.php
-
 require_once __DIR__.'/../vendor/autoload.php';
+
+use Symfony\Component\HttpFoundation\Request;
 
 $app = new Silex\Application();
 
@@ -13,6 +14,11 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 
 $app->get('/', function () use ($app) {
 	return $app['twig']->render('index.html.twig');
+});
+
+$app->post('/hello', function (Request $request) use ($app) {
+	$name = $request->get('name');
+	return $app['twig']->render('hello.html.twig', array('name' => $name));
 });
 
 $app->get('/hello/{name}', function ($name) use ($app) {

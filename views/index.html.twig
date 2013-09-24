@@ -5,5 +5,10 @@
 {% block content %}
     <h1>Silex App Home Page</h1>
 
-    <p>This comes from Twig!</p>
+    <form action="/hello" method="POST">
+        <label for="name">What's your name, stranger?</label>
+        <input type="text" id="name" name="name" />
+
+        <button type="submit">Say Hello!</button>
+    </form>
 {% endblock %}
