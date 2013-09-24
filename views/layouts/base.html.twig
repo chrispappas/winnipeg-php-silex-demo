@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+
+    <title>{% block title %}WinnipegPHP Silex/Twig Demo{% endblock %}</title>
+
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    {% endblock %}
+
+    {% block js %}{% endblock %}
+
+</head>
+<body>
+
+{% block content %}
+    <h1>Skeleton Template</h1>
+    <p>If a child template extends this one and defines the "content" block, this won't show up.</p>
+{% endblock %}
+
+</body>
+</html>
+

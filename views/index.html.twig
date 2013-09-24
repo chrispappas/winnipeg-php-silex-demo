@@ -1,3 +1,9 @@
-<h1>Silex App Home Page</h1>
+{% extends "layouts/base.html.twig" %}
 
-<p>This comes from Twig!</p>
+{% block title %}Home Page | {{ parent() }}{% endblock %}
+
+{% block content %}
+    <h1>Silex App Home Page</h1>
+
+    <p>This comes from Twig!</p>
+{% endblock %}
