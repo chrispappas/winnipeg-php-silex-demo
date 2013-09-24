@@ -1,0 +1,11 @@
+{
+    "name": "chrispappas/winnipeg-php-silex-demo",
+    "description": "Silex/Twig Demo App for the Winnipeg PHP User Group",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Chris Pappas",
+            "email": "pappas.christopher@gmail.com"
+        }
+    ]
+}
