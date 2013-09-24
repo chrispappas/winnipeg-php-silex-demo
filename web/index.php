@@ -8,6 +8,7 @@ $app = new Silex\Application();
 // register the TwigServiceProvider so we can render templates using Twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
 	'twig.path' => __DIR__.'/../views',     // changed to reflect the /views dir being sibling to /web
+	'twig.options' => array('debug' => true)
 ));
 
 $app->get('/', function () use ($app) {
@@ -15,7 +16,7 @@ $app->get('/', function () use ($app) {
 });
 
 $app->get('/hello/{name}', function ($name) use ($app) {
-	return 'Hello '.$app->escape($name);
+	return $app['twig']->render('hello.html.twig', array('name' => $name));
 });
 
 $app->run();
