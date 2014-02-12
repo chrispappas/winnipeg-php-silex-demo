@@ -7,13 +7,20 @@ Chris Pappas [pappas.christopher@gmail.com](pappas.christopher@gmail.com)
 Web Developer and Front-End Specialist
 Tipping Canoe
 
+Project Links:
+--------------
+
+* [Git](http://git-scm.com/) - Distributed Version Control System (DVCS)
+* [Composer](http://getcomposer.org/) - PHP source package management system
+* [Silex](http://silex.sensiolabs.org/) - Silex's project homepage
+* [Twig](http://twig.sensiolabs.org) - Twig's project homepage
+
 Prerequisites
 -------------
 
-* A web server with PHP 5.3 or greater. Ideally you will have Apache to easily take advantage of the included `.htaccess`
-file for URL rewriting.
-* [Composer](http://getcomposer.org/) - PHP source package management system
-* [Git](http://git-scm.com/) - Distributed Version Control System (DVCS)
+* A web server with PHP 5.3 or greater. Ideally you will have Apache to easily take advantage of the included `.htaccess` file for URL rewriting.
+* Composer installed and working
+* Git
 
 Getting started
 ---------------
